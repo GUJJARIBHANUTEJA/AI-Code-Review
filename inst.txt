@@ -1,0 +1,2 @@
+backend npx nodemon
+front end npm run dev

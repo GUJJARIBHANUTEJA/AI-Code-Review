@@ -19,11 +19,13 @@ function App() {
   useEffect(() =>{
     prism.highlightAll()
   })
-  async function reviewCode() {
-
-   const response = await axios.post('http://localhost:3000/ai/get-review', {code})
-   setreview(response.data)
-  }
+ async function reviewCode() {
+  const response = await axios.post(
+    `${import.meta.env.VITE_REACT_APP_BACKEND_BASE_URL}/ai/get-review`, 
+    {code}
+  );
+  setreview(response.data);
+}
 
   return (
     <>

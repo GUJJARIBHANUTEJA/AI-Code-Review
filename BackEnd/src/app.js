@@ -4,7 +4,7 @@ const cors = require('cors')
 
 const app = express()
 app.use(cors({
-  origin: 'https://ai-code-review-omega.vercel.app/',
+  origin: 'https://ai-code-review-omega.vercel.app',
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type']
 }));

@@ -6,7 +6,7 @@ const app = express()
 app.use(cors({
   origin: 'https://ai-code-review-omega.vercel.app',
   methods: ['GET', 'POST', 'OPTIONS'],
-  allowedHeaders: ['Content-Type']
+  allowedHeaders: ['Content-Type,'X-Google-Gemini-Key']
 }));
 app.use(express.json())
 

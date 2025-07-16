@@ -301,6 +301,8 @@ textarea {
 .review-content,
 .empty-state {
   flex: 1;
+  height: 400px;
+  max-height: 400px;
   background: rgba(15, 23, 42, 0.85);
   border-radius: 0.5rem;
   padding: 1rem;
